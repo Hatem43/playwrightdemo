@@ -32,7 +32,6 @@ public class LoginTest extends BaseTest {
     public void setuptest(Method method){
         extent= ExtentManager.getExtent();
         test=extent.createTest(method.getName());
-        page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
         loginPage=new LoginPage(page);
     }
 
