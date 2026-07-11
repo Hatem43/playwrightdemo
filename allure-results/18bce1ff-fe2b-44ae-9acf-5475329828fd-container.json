@@ -1,1 +1,0 @@
-{"uuid":"18bce1ff-fe2b-44ae-9acf-5475329828fd","name":"tests.LoginTest.screen","children":["28506606-a83f-4ee4-9b52-d4608c86e067"],"description":"","befores":[],"afters":[{"name":"screen","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1783813428051,"stop":1783813428633}],"start":1783813428051,"stop":1783813428633}
