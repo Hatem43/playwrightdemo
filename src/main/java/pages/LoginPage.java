@@ -9,6 +9,7 @@ public class LoginPage {
     private final String passwordTextbox="//input[@placeholder='Password']";
     private String loginButton="//button[@type='submit']";
 
+
     public LoginPage(Page page) {
         this.page = page;
     }
