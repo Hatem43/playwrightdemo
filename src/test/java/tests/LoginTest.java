@@ -66,7 +66,6 @@ public class LoginTest extends BaseTest {
     @Test
     public void logintestwithinvalidcredentials(){
 
-
         loginPage.login("hatem","123");
         errormessage1=page.getByText("Invalid credentials");
         assertThat(errormessage1).hasText("Invalid credentials");
@@ -74,6 +73,7 @@ public class LoginTest extends BaseTest {
 
     @Test
     public void logintestwithemptydata(){
+
         loginPage.login("","");
         errormessage1=page.locator("(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'][normalize-space()='Required'])[1]");
         errormessage2=page.locator("(//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message'][normalize-space()='Required'])[2]");
