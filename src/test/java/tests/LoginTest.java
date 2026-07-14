@@ -43,8 +43,10 @@ public class LoginTest extends BaseTest {
 
         // checking page URL
         Assert.assertEquals(page.url(),"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index");
+
         //checking page Title
-        //Assert.assertEquals(page.title(),"OrangeHRM");
+        Assert.assertEquals(page.title(),"OrangeHRM");
+
         dashboard=page.getByRole(AriaRole.HEADING, new Page.GetByRoleOptions().setName("Dashboard"));
 
         //checking visiability of element
@@ -58,6 +60,7 @@ public class LoginTest extends BaseTest {
 
         //checking element contains the expected attribute
         assertThat(dashboard).hasAttribute("class", "oxd-text oxd-text--h6 oxd-topbar-header-breadcrumb-module");
+
         page.locator("//*[@id=\"app\"]/div[1]/div[1]/header/div[1]/div[3]/ul/li/span/p").click();
         signout=page.getByRole(AriaRole.MENUITEM,new Page.GetByRoleOptions().setName("Logout"));
         signout.click();
