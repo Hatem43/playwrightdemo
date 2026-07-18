@@ -19,7 +19,6 @@ public class LoginPage {
         page.fill(usernameTextbox, username);
         page.fill(passwordTextbox, password);
         page.click(loginButton);
-
     }
 
 }
